@@ -1,0 +1,8 @@
+apiVersion: build.projectriff.io/v1alpha1
+kind: Application
+metadata:
+  name: my-func
+spec:
+  source:
+    git:
+      revision: stable
