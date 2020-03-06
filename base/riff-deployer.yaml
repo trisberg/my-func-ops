@@ -1,0 +1,20 @@
+---
+apiVersion: build.projectriff.io/v1alpha1
+kind: Application
+metadata:
+  name: my-func
+spec:
+  image: my-func
+  source:
+    git:
+      revision: master
+      url: https://github.com/trisberg/my-func.git
+---
+apiVersion: knative.projectriff.io/v1alpha1
+kind: Deployer
+metadata:
+  name: my-func
+spec:
+  build:
+    applicationRef: my-func
+  ingressPolicy: External

@@ -1,0 +1,6 @@
+images:
+  - name: my-func
+    newName: springdeveloper/my-func
+    newTag: 0.1.0-snapshot
+resources:
+  - ../../base

@@ -1,0 +1,4 @@
+images:
+- path: spec/image
+  create: true
+  kind: Application

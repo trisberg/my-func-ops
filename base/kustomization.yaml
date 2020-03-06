@@ -1,0 +1,6 @@
+commonLabels:
+  app.kubernetes.io/name: my-func
+resources:
+  - riff-deployer.yaml
+configurations:
+  - kustomizeconfig/riff-application.yaml
